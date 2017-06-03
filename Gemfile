@@ -56,4 +56,8 @@ gem 'faker'
 
 group :development do
  gem 'letter_opener_web'
-end 
+end
+
+gem 'rails_admin'
+
+gem 'cancan'
