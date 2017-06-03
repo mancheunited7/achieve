@@ -53,3 +53,7 @@ gem 'devise'
 gem 'execjs'
 
 gem 'faker'
+
+group :development do
+ gem 'letter_opener_web'
+end 
