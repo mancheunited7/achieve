@@ -1,5 +1,5 @@
 <%= @poems.each do |poem| %>
- <td>title:<%=poem.title %></td>
+ <td>タイトル:<%=poem.title %></td>
  <td>content:<%=poem.content %></td>
- <p><%= link_to 'show',poem %></p>
+ <td><%= link_to 'show',poem %></td><br />
  <% end %>
