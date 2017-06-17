@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
     unless user
       user = User.new(
-      name :auth.extra.raw_info_.name,
+      name: auth.extra.raw_info_.name,
       provider: auth.provider,
       uid: auth.uid,
       email: auth.info.email ||="#{auth.uid}-#{auth.provider}@example.com",
@@ -30,7 +30,7 @@ def self.find_for_twitter_oauth(auth,signed_in_resource=nil)
 
   unless user
     user = User.new(
-    name :auth.nickname,
+    name: auth.nickname,
     image_url: auth.info.image,
     provider: auth.provider,
     uid: auth.uid,
