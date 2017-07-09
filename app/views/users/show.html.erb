@@ -1,0 +1,14 @@
+<div class= "container">
+<h3>フォローユーザー</h3>
+<% @user.followed_users.each do |user| %>
+ <%= render 'follow_follower_form',user: user %>
+<% end %>
+<br>
+<br>
+<br>
+<br>
+<h3><div class="follower">フォロワーユーザー</div></h3>
+<% @user.followers.each do |user| %>
+ <%= render 'follow_follower_form',user: user %>
+<% end %>
+</div>
