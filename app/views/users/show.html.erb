@@ -1,4 +1,10 @@
 <div class= "container">
+<% if @user.name == nil %>
+<h2>ユーザー名不明の詳細画面</h2>
+<% else %>
+<h2><%= @user.name %>の詳細画面</h2>
+<% end %>
+<br>
 <h3>フォローユーザー</h3>
 <% @user.followed_users.each do |user| %>
  <%= render 'follow_follower_form',user: user %>
