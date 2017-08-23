@@ -31,6 +31,21 @@ class CommentsController < ApplicationController
    end
   end
 
+  def edit
+    @blog = Blog.find(params[:blog_id])
+    @comment = Comment.find(params[:id])
+  end
+
+  def update
+    @comment = Comment.find(params[:id])
+    if @comment.update(comment_params)
+      redirect_to blog_path(id: @comment.blog_id), notice:"コメントを編集しました"
+    else
+      render "comments/edit"
+    end
+  end
+
+
     private
       def comment_params
         params.require(:comment).permit(:blog_id,:content)
