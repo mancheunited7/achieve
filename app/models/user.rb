@@ -36,7 +36,7 @@ def self.find_for_twitter_oauth(auth,signed_in_resource=nil)
 
   unless user
     user = User.new(
-    name: auth.nickname,
+    name: auth.info.nickname,
     image_url: auth.info.image,
     provider: auth.provider,
     uid: auth.uid,
