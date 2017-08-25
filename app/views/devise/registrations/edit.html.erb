@@ -12,7 +12,7 @@
 
  <div class="field">
    <%=f.label :名前 %><br />
-   <%=text_field :name,class:"form-control" %>
+   <%=f.text_field :name,class:"form-control" %>
  </div>
 
 <% if @user.provider.blank? %>

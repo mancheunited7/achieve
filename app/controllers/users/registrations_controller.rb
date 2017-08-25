@@ -1,9 +1,10 @@
 class Users::RegistrationsController < Devise::RegistrationsController
 
-def build_resource(hash=nil)
-  hash[:id] = User.create_unique_string
-  super
-end
-
+  #ユーザーidをフォームから登録ではなく自動的に生成
+  def build_resource(hash=nil)
+    #ランダムなユーザーidを作成
+    hash[:uid] = User.create_unique_string
+    super
+  end
 
 end
