@@ -28,7 +28,6 @@ module Achieve
     config.generators do |g|
       g.assets     false
       g.helper     false
-    end
 
     g.test_framework :rspec,
       fixtures: true,
@@ -38,7 +37,7 @@ module Achieve
       controller_specs: true,
       request_specs: false
     g.fixture_replacement :factory_girl, dir: "spec/factories"
-    end
+  end
 
   end
 end

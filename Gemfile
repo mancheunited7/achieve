@@ -40,8 +40,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'letter_opener_web'
-  gem 'pry-rails'
-  gem 'better_errors'
 
   gem 'capistrano', '3.6.0'
   gem 'capistrano-bundler'
@@ -74,7 +72,6 @@ group :development do
 gem 'dotenv-rails'
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '~> 2.0'
-
 end
 
 gem 'omniauth'
