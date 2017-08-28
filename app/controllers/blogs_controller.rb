@@ -6,6 +6,8 @@ class BlogsController < ApplicationController
     @users = User.all
     @blogs = Blog.all
     @blogs.order(created_at: :asc)
+    #raise
+    #binding.pry
   end
 
   def new
