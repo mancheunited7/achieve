@@ -43,8 +43,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'letter_opener_web'
-  gem 'pry-rails'
-  gem 'better_errors'
 
   gem 'capistrano', '3.6.0'
   gem 'capistrano-bundler'
@@ -73,6 +71,9 @@ gem 'activeresource'
 
 group :development do
 gem 'dotenv-rails'
+gem 'pry-rails'
+gem 'better_errors'
+gem 'binding_of_caller'
 end
 
 gem 'omniauth'
