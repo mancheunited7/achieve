@@ -35,18 +35,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
   gem 'letter_opener_web'
-
   gem 'capistrano', '3.6.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
-
   gem "rspec-rails"
   gem "factory_girl_rails"
 end
@@ -72,7 +68,6 @@ group :development do
 gem 'dotenv-rails'
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '~> 2.0'
-
 gem 'pry-rails'
 gem 'better_errors'
 gem 'binding_of_caller'
@@ -96,6 +91,7 @@ gem 'unicorn'
 gem 'therubyracer', platforms: :ruby
 
 group :test do
+
   gem "capybara"
   gem "database_cleaner"
   gem "launchy"
